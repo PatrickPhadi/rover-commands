@@ -1,0 +1,35 @@
+{
+  "name": "rover-commands",
+  "version": "1.0.0",
+  "description": "Mars Rover Technical challenge with Nodejs ES6",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel src --out-dir dist  --copy-files",
+    "start": "node dist/app.js",
+    "start:dev": "nodemon --exec babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickphadi/rover-commands.git"
+  },
+  "author": "Patrick Phadi (patrickphadi22@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickphadi/rover-commands/issues"
+  },
+  "homepage": "https://github.com/patrickphadi/rover-commands#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+    "@babel/preset-env": "^7.17.10",
+    "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "formidable": "^2.0.1"
+  }
+}
